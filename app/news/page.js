@@ -1,13 +1,11 @@
-import Link from "next/link"
+import NewsList from '@/components/news-list';
+import {DUMMY_NEWS} from '@/dummy-news';
 
-const News = () =>{
-    return(
-        <>
-        <Link href="/news/1">Link1</Link>
-        <Link href="/news/2">Link2</Link>
-        <Link href="/news/3">Link3</Link>
-        </>
-    )
+export default function NewsPage() {
+  return (
+    <>
+      <h1>News Page</h1>
+      <NewsList news={DUMMY_NEWS}/>
+    </>
+  );
 }
-
-export default News;
