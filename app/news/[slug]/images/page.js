@@ -10,6 +10,7 @@ export default function ImagePage({params}) {
   }
 
   return <div className="fullscreen-image">
+    <h3>Normal image W/O interceptor routing</h3>
     <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
   </div>
 }
